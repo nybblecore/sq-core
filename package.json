@@ -1,7 +1,6 @@
 {
   "name": "sq-core",
   "version": "2.4.0",
-  "private": true,
   "scripts": {
     "client:test": "node scripts/test.js --no-watch",
     "client:test:watch": "node scripts/test.js",
@@ -17,7 +16,7 @@
     "start": "start-storybook -p 6006",
     "clean:dist": "rm -rf dist && npm run dist",
     "dist": "webpack && webpack --config webpack.web.config.js && node scripts/dist.js",
-    "dist:push": "npm run dist && cd dist && git add . && git commit -m 'v2.2.x-update' && git push",
+    "dist:push": "npm run dist && cd dist && git add . && git commit -m 'v2.x.x-update' && git push",
     "dist:target": "npm version patch && rm -rf dist && webpack && webpack --config webpack.web.config.js && node scripts/dist.js && cd dist && npm pack && cd .. && node scripts/dist-post.js",
     "build-storybook": "build-storybook"
   },
