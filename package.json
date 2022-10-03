@@ -1,7 +1,6 @@
 {
   "name": "sq-core",
-  "version": "2.4.1",
-  "private": true,
+  "version": "2.4.14",
   "scripts": {
     "client:test": "node scripts/test.js --no-watch",
     "client:test:watch": "node scripts/test.js",
@@ -37,12 +36,13 @@
     "report-dir": "./coverage/server"
   },
   "dependencies": {
+    "archiver": "^5.3.0",
     "axios": "^0.25.0",
     "bfj": "6.1.1",
     "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.5",
     "dotenv": "^6.2.0",
     "dotenv-expand": "4.2.0",
-    "cookie-parser": "^1.4.5",
     "ejs": "^3.1.6",
     "express": "^4.16.4",
     "express-session": "^1.17.1",
@@ -56,8 +56,7 @@
     "nodemailer": "^6.7.2",
     "serve-favicon": "^2.5.0",
     "socket.io": "^2.3.0",
-    "underscore": "^1.10.2",
-    "archiver": "^5.3.0"
+    "underscore": "^1.10.2"
   },
   "devDependencies": {
     "@babel/core": "^7.16.0",
@@ -69,13 +68,16 @@
     "@mui/lab": "^5.0.0-alpha.81",
     "@mui/material": "^5.8.0",
     "@mui/styles": "^5.8.0",
+    "@mui/x-date-pickers": "^5.0.0-beta.5",
     "@pmmmwh/react-refresh-webpack-plugin": "^0.5.3",
     "@reduxjs/toolkit": "^1.8.3",
     "@rollup/plugin-json": "^4.1.0",
-    "@storybook/addon-actions": "^6.5.7",
-    "@storybook/addon-essentials": "^6.5.7",
-    "@storybook/addon-links": "^6.5.7",
-    "@storybook/react": "^6.5.7",
+    "@storybook/addon-actions": "^6.5.12",
+    "@storybook/addon-essentials": "^6.5.12",
+    "@storybook/addon-links": "^6.5.12",
+    "@storybook/builder-webpack5": "^6.5.12",
+    "@storybook/manager-webpack5": "^6.5.12",
+    "@storybook/react": "^6.5.12",
     "@svgr/webpack": "^5.5.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -152,6 +154,7 @@
     "style-loader": "^3.3.1",
     "tailwindcss": "^3.0.2",
     "terser-webpack-plugin": "^5.2.5",
+    "tinymce": "^6.2.0",
     "web-vitals": "^2.1.4",
     "webpack": "^5.64.4",
     "webpack-bundle-analyzer": "^4.5.0",
